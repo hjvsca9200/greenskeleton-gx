@@ -35,7 +35,7 @@
     </style>
     <script>
         function validateCommand() {
-            const comms = ['load', 'games', 'cores', 'bart', 'help'];
+            const comms = ['load', 'games', 'cores', 'bart', 'help', 'summary'];
             const cores = ['arcade', 'nes', 'segaMD', 'flash'];
             const games = ['LagrangePoint_JP', 'Battletoads', 'AlienSoldier_JP', 'LagrangePoint_US'];
 
@@ -167,7 +167,7 @@ Status: Working`
 <body>
     <h1>green skeleton</h1>
     <p>when loading a game, proper syntax should look like this: [comm] [core] [game name]</p>
-    <textarea id="commandBox" rows="10" cols="50" placeholder="use the help command to display a list of the available commands"></textarea>
+    <textarea id="commandBox" rows="10" cols="50" placeholder="use the 'help' command to display a list of the available commands"></textarea>
     <br>
     <button onclick="validateCommand()">input</button>
     <p id="output"></p>
